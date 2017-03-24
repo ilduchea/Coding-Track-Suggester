@@ -52,3 +52,11 @@ li span {
 .questions {
   text-align: justify;
 }
+
+#C-Sharp,
+#Java,
+#PHP,
+#Ruby,
+#CSS {
+  display:  none;
+}
