@@ -8,6 +8,7 @@ $(function(){
     if (nameLength > 0) {
       $(".intro").hide();
       $(".questions").slideDown();
+      $("input[type=radio]:checked + .blue_dot").addClass("blue_fill");
     } else {
       $("label").addClass("red");
       $(".error").text("Required Field.");
