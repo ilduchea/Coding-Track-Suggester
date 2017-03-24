@@ -85,6 +85,6 @@ li input[type="radio"] {
   opacity: 0;
   height: 20px;
 	width: 20px;
-  margin-left: -20px;
+  margin-right: -20px;
   z-index: 99;
 }

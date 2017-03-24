@@ -8,6 +8,11 @@ $(function(){
     $(".questions").slideDown();
   });
 
+  $("input[type=radio]").click(function(){
+    $(".blue_dot").removeClass("blue_fill");
+    $("input[type=radio]:checked + .blue_dot").addClass("blue_fill");
+  });
+
   $("button#submit").click(function() {
     var answer1 = parseInt($("input[name=question1]:checked").val());
     var answer2 = parseInt($("input[name=question2]:checked").val());
