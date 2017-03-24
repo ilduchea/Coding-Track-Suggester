@@ -1,3 +1,30 @@
 /** {
   border: 1px solid black;
 }*/
+
+body {
+  text-align: center;
+  background-color: #BCAB79;
+  font-family: ;
+  color: #253031;
+}
+
+.title-area {
+  background-color: #2978A0;
+  text-shadow: -1px 1px #C6E0FF,
+               -1px -1px #C6E0FF,
+               1px -1px #C6E0FF,
+               1px 1px #C6E0FF;
+}
+
+button#start {
+  background-color: #2978A0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #253031;
+}
+
+button#start:hover {
+  background-color: #253031;
+  color: #2978A0;
+}
