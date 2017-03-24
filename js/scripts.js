@@ -19,26 +19,26 @@ $(function(){
 
     $(".results").slideDown();
 
-    if (totalAnswer <= 6) {
-      $(".questions").hide();
-      $("#C-Sharp").show();
-      $("#result-name").text("C-Sharp");
-    } else if (totalAnswer <= 10) {
-      $(".questions").hide();
-      $("#Java").show();
-      $("#result-name").text("Java");
-    } else if (totalAnswer <= 14) {
-      $(".questions").hide();
-      $("#PHP").show();
-      $("#result-name").text("PHP");
-    } else if (totalAnswer <= 17) {
-      $(".questions").hide();
-      $("#Ruby").show();
-      $("#result-name").text("Ruby");
-    } else if (totalAnswer <= 20) {
+    if (totalAnswer <= 8) {
       $(".questions").hide();
       $("#CSS").show();
       $("#result-name").text("CSS");
+    } else if (totalAnswer <= 12) {
+      $(".questions").hide();
+      $("#C-Sharp").show();
+      $("#result-name").text("C-Sharp");
+    } else if (totalAnswer <= 17) {
+      $(".questions").hide();
+      $("#Java").show();
+      $("#result-name").text("Java");
+    } else if (totalAnswer <= 20) {
+      $(".questions").hide();
+      $("#PHP").show();
+      $("#result-name").text("PHP");
+    } else if (totalAnswer <= 25) {
+      $(".questions").hide();
+      $("#Ruby").show();
+      $("#result-name").text("Ruby");
     };
 
   });
