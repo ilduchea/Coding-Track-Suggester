@@ -1,10 +1,11 @@
 $(function(){
+
   $(".questions").hide();
   $(".results").hide();
 
   $("button#start").click(function() {
     $(".intro").hide();
-    $(".questions").show();
+    $(".questions").slideDown();
   });
 
   $("button#submit").click(function() {
@@ -14,10 +15,13 @@ $(function(){
     var answer4 = parseInt($("input[name=question4]:checked").val());
     var answer5 = parseInt($("input[name=question5]:checked").val());
 
+    var usersName = $("#name").val();
+
     var totalAnswer = answer1 + answer2 + answer3 + answer4 + answer5;
-    console.log(totalAnswer);
 
     $(".results").slideDown();
+
+    $("#users-name").text(usersName);
 
     if (totalAnswer <= 8) {
       $(".questions").hide();
@@ -40,7 +44,6 @@ $(function(){
       $("#Ruby").show();
       $("#result-name").text("Ruby");
     };
-
   });
 
 });

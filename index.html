@@ -20,6 +20,9 @@
           <p>"Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</p>
           <p>If you're more interested in back-end development, you have several choices of languages: C#, Java, PHP, and Ruby are all offered at Epicodus. My best advice about how to choose is not to worry too much. Most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school. Back-end programmers often switch languages as they change jobs, or even as they build different types of software at the same job. So don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another."</p>
           <p>To help guide your choice here is a quick questionnaire.</p>
+          <label for="name">Please enter your name:</label>
+          <input id="name" type="text" name="name" value="">
+          <br />
           <button id="start" class="btn start-btn" type="button" name="start">Start</button>
         </div>
 
@@ -165,7 +168,7 @@
 
       </div>
       <div class="results">
-        <h2>You should try starting with <strong id="result-name"></strong></h2>
+        <h2><em id="users-name"></em>, you should try starting with <strong id="result-name"></strong>.</h2>
         <div id="C-Sharp">
           <p>The C# ("C sharp") programming language is most commonly used with the .NET framework. Students who are well-versed in C# programming can use it to create client applications, database applications, distributed components, and much more.</p>
           <p>Students who learn C# programming and combine it with their knowledge of the .NET framework can target larger enterprises, government agencies, and companies serving enterprise and government clients for employment. </p>
