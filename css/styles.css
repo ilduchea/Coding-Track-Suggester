@@ -95,3 +95,11 @@ li input[type="radio"]:hover {
 #users-name {
   color: #315659;
 }
+
+.red {
+  color: #cc0202;
+}
+
+.error {
+  font-size: 15px;
+}

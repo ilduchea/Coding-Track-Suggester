@@ -4,8 +4,14 @@ $(function(){
   $(".results").hide();
 
   $("button#start").click(function() {
-    $(".intro").hide();
-    $(".questions").slideDown();
+    var nameLength = parseInt($("#name").val().length);
+    if (nameLength > 0) {
+      $(".intro").hide();
+      $(".questions").slideDown();
+    } else {
+      $("label").addClass("red");
+      $(".error").text("Required Field.");
+    }
   });
 
   $("input[type=radio]").click(function(){
