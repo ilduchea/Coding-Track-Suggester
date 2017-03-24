@@ -5,7 +5,7 @@
 body {
   text-align: center;
   background-color: #BCAB79;
-  font-family: ;
+  font-family: Impact, Charcoal, sans-serif;
   color: #253031;
 }
 
@@ -22,9 +22,17 @@ button#start {
   font-size: 20px;
   font-weight: bold;
   color: #253031;
+  text-shadow: 1px 1px #C6E0FF;
+
 }
 
 button#start:hover {
   background-color: #253031;
   color: #2978A0;
+  text-shadow: none;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
 }
