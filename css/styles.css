@@ -17,7 +17,8 @@ body {
                1px 1px #C6E0FF;
 }
 
-button#start {
+button#start,
+button#submit {
   background-color: #2978A0;
   font-size: 20px;
   font-weight: bold;
@@ -26,7 +27,8 @@ button#start {
 
 }
 
-button#start:hover {
+button#start:hover,
+button#submit:hover {
   background-color: #253031;
   color: #2978A0;
   text-shadow: none;
@@ -45,4 +47,8 @@ li span {
   margin-left: 10px;
   margin-bottom: 10px;
   font-size: 20px;
+}
+
+.questions {
+  text-align: justify;
 }
