@@ -19,35 +19,28 @@ $(function(){
     var answer3 = parseInt($("input[name=question3]:checked").val());
     var answer4 = parseInt($("input[name=question4]:checked").val());
     var answer5 = parseInt($("input[name=question5]:checked").val());
-
     var usersName = $("#name").val();
-
     var totalAnswer = answer1 + answer2 + answer3 + answer4 + answer5;
 
-    $(".results").slideDown();
+    var result = function(id, track) {
+      $(".questions").hide();
+      $(id).show();
+      $("#result-name").text(track);
+    };
 
+    $(".results").slideDown();
     $("#users-name").text(usersName);
 
     if (totalAnswer <= 8) {
-      $(".questions").hide();
-      $("#CSS").show();
-      $("#result-name").text("CSS/Design");
+      result("#CSS", "CSS/Design");
     } else if (totalAnswer <= 12) {
-      $(".questions").hide();
-      $("#C-Sharp").show();
-      $("#result-name").text("C#/.NET");
+      result("#C-Sharp", "C#/.NET");
     } else if (totalAnswer <= 17) {
-      $(".questions").hide();
-      $("#Java").show();
-      $("#result-name").text("Java/Android");
+      result("#Java", "Java/Android");
     } else if (totalAnswer <= 20) {
-      $(".questions").hide();
-      $("#Ruby").show();
-      $("#result-name").text("Ruby/Rails");
+      result("#Ruby", "Ruby/Rails");
     } else if (totalAnswer <= 25) {
-      $(".questions").hide();
-      $("#PHP").show();
-      $("#result-name").text("PHP/Durpal");
+      result("#PHP", "PHP/Durpal");
     };
   });
 
