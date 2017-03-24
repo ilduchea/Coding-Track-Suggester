@@ -88,3 +88,11 @@ li input[type="radio"] {
   margin-right: -20px;
   z-index: 99;
 }
+
+li input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+#users-name {
+  color: #315659;
+}

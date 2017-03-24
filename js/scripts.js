@@ -31,23 +31,23 @@ $(function(){
     if (totalAnswer <= 8) {
       $(".questions").hide();
       $("#CSS").show();
-      $("#result-name").text("CSS");
+      $("#result-name").text("CSS/Design");
     } else if (totalAnswer <= 12) {
       $(".questions").hide();
       $("#C-Sharp").show();
-      $("#result-name").text("C-Sharp");
+      $("#result-name").text("C#/.NET");
     } else if (totalAnswer <= 17) {
       $(".questions").hide();
       $("#Java").show();
-      $("#result-name").text("Java");
+      $("#result-name").text("Java/Android");
     } else if (totalAnswer <= 20) {
       $(".questions").hide();
-      $("#PHP").show();
-      $("#result-name").text("PHP");
+      $("#Ruby").show();
+      $("#result-name").text("Ruby/Rails");
     } else if (totalAnswer <= 25) {
       $(".questions").hide();
-      $("#Ruby").show();
-      $("#result-name").text("Ruby");
+      $("#PHP").show();
+      $("#result-name").text("PHP/Durpal");
     };
   });
 
